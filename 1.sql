@@ -92,11 +92,23 @@ and emp_no >= 485733;
 
 select * from psdb.employees
 where first_name like 'Crist%'
-and emp_no < 13126;
+and emp_no < 37126;
 
 select * from psdb.employees
-where first_name like 'Crist%'
-and emp_no <= 13126;
+where emp_no IN (494831, 478932, 599833, 499832)
+and gender IN ('M', 'F');
+
+select * from psdb.employees
+where emp_no IN (494831, 478932, 599833, 499832)
+and gender IN ('M', 'F')
+limit 10;
+
+select emp_no as Numero, first_name as Nome from psdb.employees as emp
+where emp.emp_no IN (494831, 478932, 599833, 499832)
+and emp.gender IN ('M', 'F');
+
+
+
 
 
 
