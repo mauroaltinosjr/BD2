@@ -1,9 +1,3 @@
-select * from world.country;
-select * from world.city;
-select * from world.countrylanguage;
-
-
-
 
 1 select count(*) from world.country;
 
